@@ -6,7 +6,11 @@ import '../main.dart';
 
 class PharmacyListItem extends StatelessWidget {
   Eczane eczane;
-  PharmacyListItem({Key key, this.eczane}) : super(key: key);
+  bool isFav;
+  Function onPress;
+
+  PharmacyListItem({Key key, this.eczane, this.isFav, this.onPress})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +20,7 @@ class PharmacyListItem extends StatelessWidget {
         height: 150,
         width: MediaQuery.of(context).size.width,
         child: Padding(
-          padding: EdgeInsets.all(16),
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -37,7 +41,7 @@ class PharmacyListItem extends StatelessWidget {
                 style: TextStyle(color: darkThemeGrey, fontSize: 16),
               ),
               SizedBox(
-                height: 16,
+                height: 10,
               ),
               Row(
                 children: [
@@ -55,6 +59,13 @@ class PharmacyListItem extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(color: darkThemeGrey, fontSize: 16),
                   ),
+                  Expanded(child: Container()),
+                  IconButton(
+                      icon: Icon(
+                        eczane.isFav ? Icons.star : Icons.star_border,
+                        size: 30,
+                      ),
+                      onPressed: onPress)
                 ],
               ),
             ],

@@ -1,0 +1,82 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:6586134929290567525",
+      "lastPropertyId": "11:2324769028379229548",
+      "name": "EczaneObjectBox",
+      "properties": [
+        {
+          "id": "1:8127367316243202766",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4752968837910520896",
+          "name": "eczaneAdi",
+          "type": 9
+        },
+        {
+          "id": "3:3245701906954660364",
+          "name": "adresi",
+          "type": 9
+        },
+        {
+          "id": "4:8232833598519772471",
+          "name": "semt",
+          "type": 9
+        },
+        {
+          "id": "5:6772164176917682095",
+          "name": "yolTarifi",
+          "type": 9
+        },
+        {
+          "id": "6:3976365751730952538",
+          "name": "telefon",
+          "type": 9
+        },
+        {
+          "id": "7:906963108293197803",
+          "name": "telefon2",
+          "type": 9
+        },
+        {
+          "id": "8:7401388370710488896",
+          "name": "sehir",
+          "type": 9
+        },
+        {
+          "id": "9:2159906672411511576",
+          "name": "ilce",
+          "type": 9
+        },
+        {
+          "id": "10:2576791258188801585",
+          "name": "latitude",
+          "type": 8
+        },
+        {
+          "id": "11:2324769028379229548",
+          "name": "longitude",
+          "type": 8
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "1:6586134929290567525",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

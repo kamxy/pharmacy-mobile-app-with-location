@@ -1,4 +1,5 @@
 class Eczane {
+  int id;
   String eczaneAdi;
   String adresi;
   String semt;
@@ -9,6 +10,7 @@ class Eczane {
   String ilce;
   double latitude;
   double longitude;
+  bool isFav;
 
   Eczane(
       {this.eczaneAdi,
@@ -20,7 +22,8 @@ class Eczane {
       this.sehir,
       this.ilce,
       this.latitude,
-      this.longitude});
+      this.longitude,
+      this.isFav});
 
   Eczane.fromJson(Map<String, dynamic> json) {
     eczaneAdi = json['EczaneAdi'];

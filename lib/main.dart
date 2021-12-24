@@ -3,12 +3,12 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:hive/hive.dart';
 import 'package:pharmacy_app/components/main_button.dart';
 import 'package:pharmacy_app/controllers/api_controller.dart';
 import 'package:pharmacy_app/models/eczane_model.dart';
 import 'package:pharmacy_app/screens/home_screen.dart';
 import 'package:pharmacy_app/screens/pharmacy_list_screen.dart';
+import 'package:pharmacy_app/objectbox.g.dart';
 
 main() async {
   /* WidgetsFlutterBinding.ensureInitialized();

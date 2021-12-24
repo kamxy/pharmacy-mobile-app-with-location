@@ -11,7 +11,8 @@ class ApiController {
     List<Eczane> eczaneList = [];
 
     final response = await http.get(
-        "https://www.nosyapi.com/apiv2/pharmacy?city=$city&county=$district",
+        Uri.parse(
+            "https://www.nosyapi.com/apiv2/pharmacy?city=$city&county=$district"),
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
@@ -31,7 +32,8 @@ class ApiController {
     List<Eczane> eczaneList = [];
 
     final response = await http.get(
-        "https://www.nosyapi.com/apiv2/pharmacy/distance?latitude=$lat&longitude=$long",
+        Uri.parse(
+            "https://www.nosyapi.com/apiv2/pharmacy/distance?latitude=$lat&longitude=$long"),
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
@@ -39,7 +41,6 @@ class ApiController {
               "Bearer 0vsSFcpEdCbckx3uUqwLuS6OiaEyVqLxhr2WmpH3im094YAdEgmhOprxC1cW",
         });
     var responseJson = jsonDecode(response.body);
-    print(responseJson);
     responseJson['data'].forEach((element) {
       eczaneList.add(Eczane.fromJson(element));
     });
